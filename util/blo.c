@@ -26,6 +26,10 @@
 
 #include "blo.h"
 
+#ifndef M_PI
+#define M_PI 3.14159265358979323846264338327
+#endif
+
 /* Create the lookup tables needed to generate the bandlimited signals, we
  * create sin tables (As well as the usual sin, square, saw), which is almost
  * completely pointless, but doesn't cost much ram.

@@ -26,6 +26,10 @@ typedef struct iirf iirf_t;
 #define IIR_STAGE_BANDPASS   2
 #define IIR_STAGE_BANDPASS_A 3
 
+#ifndef M_PI
+#define M_PI 3.14159265358979323846264338327
+#endif
+
 struct iir_stage {
 	int np;		/* Number of poles */
 	int mode;	/* Filter mode low/high/bandpass... */

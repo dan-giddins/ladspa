@@ -41,6 +41,10 @@
 
 #include "pitchscale.h"
 
+#ifndef M_PI
+#define M_PI 3.14159265358979323846264338327
+#endif
+
 static float ps_in[MAX_FRAME_LENGTH*2], ps_out[MAX_FRAME_LENGTH*2];
 static fft_plan aplan = NULL, splan = NULL;
 
