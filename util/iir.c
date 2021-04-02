@@ -40,7 +40,9 @@
 
 /* (hopefully) generic description of an iir filter */
 
-
+#ifndef M_PI
+# define M_PI 3.14159265358979323846
+#endif
 
 iir_stage_t *init_iir_stage(int mode, int nstages, int na, int nb){
 	iir_stage_t *dum=NULL;
