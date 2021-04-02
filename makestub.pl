@@ -88,7 +88,7 @@ print <<EOB;
 \#ifdef _WIN32
 \#define _WINDOWS_DLL_EXPORT_ __declspec(dllexport)
 int bIsFirstTime = 1; 
-static void __attribute__((constructor)) swh_init(); // forward declaration
+static void swh_init(); // forward declaration
 \#else
 \#define _WINDOWS_DLL_EXPORT_ 
 \#endif
@@ -140,7 +140,7 @@ print "	default:\n		return NULL;\n	}\n}\n\n";
 print $code;
 # Headers for init section
 print <<EOB;
-static void __attribute__((constructor)) swh_init() {
+static void swh_init() {
 	char **port_names;
 	LADSPA_PortDescriptor *port_descriptors;
 	LADSPA_PortRangeHint *port_range_hints;

@@ -2,6 +2,7 @@
 #define BIQUAD_H
 
 #define LN_2_2 0.34657359f // ln(2)/2
+#define M_LN2          0.69314718055994530942  /* log_e 2 */
 
 #include "ladspa-util.h"
 
