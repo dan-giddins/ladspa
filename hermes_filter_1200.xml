@@ -6,7 +6,8 @@
 		<meta name="maker" value="Steve Harris &lt;steve@plugin.org.uk&gt;"/>
 		<meta name="copyright" value="GPL"/>
 		<meta name="properties" value="HARD_RT_CAPABLE"/>
-		<code><![CDATA[
+		<code>
+  <![CDATA[
 #include "ladspa-util.h"
 #include "util/blo.h"
 
@@ -34,6 +35,10 @@
 
 // Magic number
 #define NOISE 23
+
+#ifndef M_PI 
+#define M_PI 3.14159265358979323846264338327 
+#endif 
 
 LADSPA_Data *sin_tbl, *tri_tbl, *saw_tbl, *squ_tbl;
 int tbl_ref_count = 0;

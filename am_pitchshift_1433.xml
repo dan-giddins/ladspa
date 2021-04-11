@@ -7,14 +7,19 @@
     <meta name="maker" value="Steve Harris &lt;steve@plugin.org.uk&gt;"/>
     <meta name="copyright" value="GPL"/>
     <meta name="properties" value="HARD_RT_CAPABLE"/>
-    <code><![CDATA[
+    <code>
+		<![CDATA[
       #include <stdlib.h>
       #include <math.h>
 
       #include "ladspa-util.h"
 
       /* Beware of dependcies if you change this */
-      #define DELAY_SIZE 8192      
+      #define DELAY_SIZE 8192  
+	  
+	  #ifndef M_PI 
+	  #define M_PI 3.14159265358979323846264338327 
+	  #endif 
     ]]></code>
   </global>
 

@@ -7,7 +7,8 @@
     <meta name="maker" value="Steve Harris &lt;steve@plugin.org.uk&gt;"/>
     <meta name="copyright" value="GPL"/>
     <meta name="properties" value="HARD_RT_CAPABLE"/>
-    <code><![CDATA[
+    <code>
+  <![CDATA[
 
 #include <math.h>
 
@@ -16,6 +17,10 @@
 #define SIN_T_SIZE 1024
 #define D_SIZE 256
 #define NZEROS 200
+
+#ifndef M_PI 
+#define M_PI 3.14159265358979323846264338327 
+#endif 
 
 /* The non-zero taps of the Hilbert transformer */
 static float xcoeffs[] = {

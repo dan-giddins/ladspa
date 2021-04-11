@@ -12,7 +12,13 @@
 		<name>Sinus wavewrapper</name>
                 <p>Produces an unusual distortion effect, for a more amp like tone, see the valve saturation plugin (section \ref{valve}).</p>
 
-		<callback event="run"><![CDATA[
+		<callback event="run">
+		  <![CDATA[
+		
+			#ifndef M_PI 
+			#define M_PI 3.14159265358979323846264338327 
+			#endif 
+			
 			float coef = wrap * M_PI;
 			unsigned long pos;
 

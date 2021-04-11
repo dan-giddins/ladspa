@@ -6,10 +6,15 @@
   <global>
     <meta name="maker" value="Steve Harris &lt;steve@plugin.org.uk&gt;"/>
     <meta name="copyright" value="GPL"/>
-    <code><![CDATA[
+    <code>
+  <![CDATA[
 #include "ladspa-util.h"
 
 #define MAX_BSIZE 1000
+
+#ifndef M_PI 
+#define M_PI 3.14159265358979323846264338327 
+#endif 
 
 int partition(LADSPA_Data array[], int left, int right);
 

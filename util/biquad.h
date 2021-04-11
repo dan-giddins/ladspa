@@ -14,6 +14,10 @@
 #define BIQUAD_TYPE float
 #endif
 
+#ifndef M_PI 
+#define M_PI 3.14159265358979323846264338327 
+#endif 
+
 typedef BIQUAD_TYPE bq_t;
 
 /* Biquad filter (adapted from lisp code by Eli Brandt,

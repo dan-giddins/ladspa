@@ -7,10 +7,14 @@
 		<meta name="copyright" value="GPL"/>
 		<meta name="properties" value="HARD_RT_CAPABLE"/>
 		<code>
-			#include "util/pitchscale.h"
+		  #include "util/pitchscale.h"
 
-			#define FRAME_LENGTH 4096
-			#define OVER_SAMP    16
+		  #define FRAME_LENGTH 4096
+		  #define OVER_SAMP    16
+
+		  #ifndef M_PI
+		  #define M_PI 3.14159265358979323846264338327
+		  #endif
 		</code>
 	</global>
 

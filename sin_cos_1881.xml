@@ -17,10 +17,15 @@
     <p>This is a simple oscillator that outputs sinewaves with a 90 degree phase shift between them.</p>
     <p>The current implementation is very inefficient, but I will improve it later.</p>
 
-    <callback event="instantiate"><![CDATA[
+    <callback event="instantiate">
+		<![CDATA[
       fs = (float)s_rate;
       phi = 0.0;
       last_om = 0.0;
+	  
+	  #ifndef M_PI 
+	  #define M_PI 3.14159265358979323846264338327 
+	  #endif 
     ]]></callback>
 
     <callback event="run"><![CDATA[

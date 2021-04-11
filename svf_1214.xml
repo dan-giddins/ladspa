@@ -6,7 +6,8 @@
 		<meta name="maker" value="Steve Harris &lt;steve@plugin.org.uk&gt;"/>
 		<meta name="copyright" value="GPL"/>
 		<meta name="properties" value="HARD_RT_CAPABLE"/>
-		<code><![CDATA[
+		<code>
+  <![CDATA[
 #include "ladspa-util.h"
 
 // Constants to match filter types
@@ -18,6 +19,10 @@
 
 // Number of filter oversamples
 #define F_R 3
+
+#ifndef M_PI 
+#define M_PI 3.14159265358979323846264338327 
+#endif 
 
 /* Structure to hold parameters for SV filter */
 

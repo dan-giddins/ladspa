@@ -6,9 +6,14 @@
   <global>
     <meta name="maker" value="Steve Harris &lt;steve@plugin.org.uk&gt;"/>
     <meta name="copyright" value="GPL"/>
-    <code><![CDATA[
+    <code>
+  <![CDATA[
 #include "ladspa-util.h"
 #define MAX_LAWS 7
+
+#ifndef M_PI 
+#define M_PI 3.14159265358979323846264338327 
+#endif 
     ]]></code>
   </global>
 

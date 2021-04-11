@@ -7,10 +7,15 @@
     <meta name="maker" value="Steve Harris &lt;steve@plugin.org.uk&gt;"/>
     <meta name="copyright" value="GPL"/>
     <meta name="properties" value="HARD_RT_CAPABLE"/>
-    <code><![CDATA[
+    <code>
+  <![CDATA[
       #include "ladspa-util.h"
 
       #define LFO_SIZE 4096
+
+	  #ifndef M_PI 
+	  #define M_PI 3.14159265358979323846264338327 
+	  #endif 
 
       typedef struct {
         float a1;

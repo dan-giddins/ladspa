@@ -6,7 +6,8 @@
 		<meta name="maker" value="Steve Harris &lt;steve@plugin.org.uk&gt;"/>
 		<meta name="copyright" value="GPL"/>
 		<meta name="properties" value="HARD_RT_CAPABLE"/>
-		<code><![CDATA[
+		<code>
+  <![CDATA[
 #include "config.h"
 
 #ifdef FFTW3
@@ -34,6 +35,9 @@ typedef rfftw_plan fft_plan;
 #define OVER_SAMP  4
 #define BANDS      15
 
+#ifndef M_PI 
+#define M_PI 3.14159265358979323846264338327 
+#endif 
 
 float bands[BANDS] =
   { 50.00f, 100.00f, 155.56f, 220.00f, 311.13f,

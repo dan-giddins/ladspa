@@ -7,11 +7,15 @@
 		<meta name="copyright" value="GPL"/>
 		<meta name="properties" value="HARD_RT_CAPABLE"/>
 		<code>
-			#include "ladspa-util.h"
+		  #include "ladspa-util.h"
 
-			int refcount;
-			LADSPA_Data *sin_tbl, *tri_tbl, *saw_tbl, *squ_tbl;
-			long sample_rate;
+		  #ifndef M_PI
+		  #define M_PI 3.14159265358979323846264338327
+		  #endif
+		  
+		  int refcount;
+		  LADSPA_Data *sin_tbl, *tri_tbl, *saw_tbl, *squ_tbl;
+		  long sample_rate;
 		</code>
 	</global>
 
