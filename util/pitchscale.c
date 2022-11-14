@@ -38,6 +38,7 @@
 #include <string.h>
 #include "../config.h"
 #include <math.h>
+#include <corecrt_math_defines.h>
 
 #include "pitchscale.h"
 

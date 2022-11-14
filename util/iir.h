@@ -2,6 +2,7 @@
 #define IIR_H
 
 #include <ladspa-util.h>
+#include <corecrt_math_defines.h>
 
 /* header file for IIR framework */
 

@@ -23,6 +23,7 @@
 #ifndef _WIN32
 #include <sys/mman.h>
 #endif
+#include <corecrt_math_defines.h>
 
 #include "blo.h"
 
